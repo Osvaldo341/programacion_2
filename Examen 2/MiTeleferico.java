@@ -1,27 +1,24 @@
-package hola;
-import java.util.*;
 public class MiTeleferico {
-	ArrayList<Linea> lineas= new ArrayList<Linea>();
-	private float cantidadingresos;
-	public MiTeleferico(){
-		Linea Roja= new Linea("rojo");
-		Linea Amarrilla= new Linea("Amarrillo");
-		Linea Verde= new Linea("Verde");
-		lineas.add(Verde);
-		lineas.add(Roja);
-		lineas.add(Amarrilla);
-		
-	}
-	
-	public void agregarPersonaFila(Persona p , String linea) {
-		for ( int i = 0 ; i < 3; i++) {
-			if(linea.equals(Roja.getColor();)) {
-				
-			}
-			
-		}
-	}
-	public void agregarCabina(String linea) {
-		
-	}
+    private Linea[] lineas;
+    private float cantidadIngresos[];
+
+    MiTeleferico(){
+        Linea[] lineas = new Linea[50];
+        lineas[1]=new Linea("Rojo");
+        lineas[2]=new Linea("Amarillo");
+        lineas[3]=new Linea("Verde");
+    }
+    void agregarPersonaFila(Persona p, String linea){
+        for (int i=1; i<=3; i++){
+        if (lineas[i].getColor()==linea){
+            lineas[i].agregarPersona(p);}
+        }
+    }
+    void agregarCabina(String linea){
+        for (int i =1;i<=3;i++){
+            if (lineas[i].getColor()==linea){
+                lineas[i].agregarCabinas(lineas[i].getCantidadCabinas()+1);
+            }
+        }
+    }
 }
