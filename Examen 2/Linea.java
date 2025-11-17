@@ -1,29 +1,29 @@
-package hola;
+public class Cabina {
+    private int nroCabina;
+    private Persona[] personasAbordo;
+    Cabina(int nroCabina){
+        this.nroCabina=nroCabina;
+        Persona[] personasAbordo = new Persona[50];
+    }
+    public void agregarPersona(Persona p){
+        personasAbordo[obtenerNroPersonas()]=p;
+    }
+    public int obtenerNroPersonas(){
+        return personasAbordo.length;
+    }
 
-import java.util.ArrayList;
+    public int getNroCabina() {
+        return nroCabina;
+    }
 
-public class Linea {
-	public String color;
-	ArrayList<Persona> FilaPersonas= new ArrayList<Persona>();
-	ArrayList<Cabina> Cabinas= new ArrayList<Cabina>();
-	public int cantidadCabinas;
-	public Linea(String color) {
-		this.color = color;
-	}
-	public void agregarPersona(Persona p){
-		FilaPersonas.add(p);
-		
-	}
-	public void  agregarCabina(int cantidadCabinas) {
-		
-		
-	}
-	public String getColor() {
-		return color;
-	}
-	public void setColor(String color) {
-		this.color = color;
-	}
-	
-	
+    public Persona[] getPersonasAbordo() {
+        return personasAbordo;
+    }
+    float ObtenerPeso(){
+        float c=0;
+        for (int i =1; i<personasAbordo.length;i++){
+            c = c+ personasAbordo[i].getPesoPersona();
+        }
+        return c;
+    }
 }
