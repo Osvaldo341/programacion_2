@@ -1,29 +1,57 @@
-public class Cabina {
-    private int nroCabina;
-    private Persona[] personasAbordo;
-    Cabina(int nroCabina){
-        this.nroCabina=nroCabina;
-        Persona[] personasAbordo = new Persona[50];
+public class Linea {
+    private String color;
+    private Persona[] filaPersonas;
+    private Cabina[] cabinas;
+    private int cantidadCabinas;
+
+    Linea(String color){
+        this.color=color;
+        this.cantidadCabinas=0;
+        Cabina[] cabinas =new Cabina[50];
+        Persona[] filaPersonas = new Persona[50];
     }
-    public void agregarPersona(Persona p){
-        personasAbordo[obtenerNroPersonas()]=p;
+    void agregarCabinas(int nroCabina){
+        Cabina c = new Cabina(nroCabina);
+        cantidadCabinas++;
+        cabinas[cabinas.length]=c;
+
     }
-    public int obtenerNroPersonas(){
-        return personasAbordo.length;
+    void agregarPersona(Persona p){
+        filaPersonas[filaPersonas.length]=p;
     }
 
-    public int getNroCabina() {
-        return nroCabina;
+    public String getColor() {
+        return color;
     }
 
-    public Persona[] getPersonasAbordo() {
-        return personasAbordo;
+    public int getCantidadCabinas() {
+        return cantidadCabinas;
     }
-    float ObtenerPeso(){
-        float c=0;
-        for (int i =1; i<personasAbordo.length;i++){
-            c = c+ personasAbordo[i].getPesoPersona();
+    void agregarPersonaCabX(Persona p, int nroCab){
+        for (int i = 1; i<=cantidadCabinas;i++){
+            if(i==nroCab){
+                if (cabinas[i].getPersonasAbordo().length<=10 && cabinas[i].ObtenerPeso()<=850){
+                    cabinas[i].agregarPersona(p);
+                }
+            }
         }
-        return c;
+    }
+    void verificar(){
+        for (int i =1; i<=cantidadCabinas;i++){
+            if (!(cabinas[i].getPersonasAbordo().length<=10 && cabinas[i].ObtenerPeso()<=850)){
+                System.out.println("No cumple con las reglas");
+            }
+            else {
+                System.out.println("Cumple con las reglas");
+            }
+        }
+    }
+
+    public Cabina[] getCabinas() {
+        return cabinas;
+    }
+
+    public Persona[] getFilaPersonas() {
+        return filaPersonas;
     }
 }
