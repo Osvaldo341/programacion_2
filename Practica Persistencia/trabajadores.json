@@ -1,0 +1,12 @@
+[
+  {
+    "nombre": "Juan",
+    "carnet": 123,
+    "salario": 2500
+  },
+  {
+    "nombre": "Ana",
+    "carnet": 456,
+    "salario": 3500
+  }
+]

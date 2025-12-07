@@ -1,0 +1,12 @@
+[
+  {
+    "nombre": "Venado",
+    "rubro": "Software",
+    "nro_empleados": 150
+  },
+  {
+    "nombre": "Umsa",
+    "rubro": "Telecom",
+    "nro_empleados": 200
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "codigo": 1,
+    "nombre": "Coca Cola",
+    "precio": 10.5
+  },
+  {
+    "codigo": 2,
+    "nombre": "Pepsi",
+    "precio": 9.5
+  }
+]

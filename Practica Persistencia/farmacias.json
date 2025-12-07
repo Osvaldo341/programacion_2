@@ -1,0 +1,21 @@
+[
+  {
+    "nombre_farmacia": "Farmacorp",
+    "sucursal": 1,
+    "direccion": "Av. Arce",
+    "medicamentos": [
+      {
+        "nombre": "Tapsin",
+        "cod_medicamento": 101,
+        "tipo": "Resfrio",
+        "precio": 5.5
+      },
+      {
+        "nombre": "Jarabe",
+        "cod_medicamento": 102,
+        "tipo": "Tos",
+        "precio": 20.0
+      }
+    ]
+  }
+]

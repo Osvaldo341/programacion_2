@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "nombre": "Panda",
+    "animales": [
+      {
+        "especie": "Mamifero",
+        "nombre": "Oso",
+        "cantidad": 2
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "nombre": "Panda",
+    "animales": [
+      {
+        "especie": "Mamifero",
+        "nombre": "Oso",
+        "cantidad": 2
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "nombre": "Panda",
+    "animales": [
+      {
+        "especie": "Mamifero",
+        "nombre": "Oso",
+        "cantidad": 2
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "nombre": "Panda",
+    "animales": [
+      {
+        "especie": "Mamifero",
+        "nombre": "Oso",
+        "cantidad": 2
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "nombre": "Panda",
+    "animales": [
+      {
+        "especie": "Mamifero",
+        "nombre": "Oso",
+        "cantidad": 2
+      }
+    ]
+  }
+]

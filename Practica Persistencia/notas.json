@@ -1,0 +1,13 @@
+[
+  {
+    "materia": "Fisica",
+    "nota_final": 90,
+    "estudiante": {
+      "ru": 1,
+      "nombre": "Juan",
+      "paterno": "Perez",
+      "materno": "A",
+      "edad": 20
+    }
+  }
+]

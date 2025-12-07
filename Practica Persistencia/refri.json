@@ -1,0 +1,12 @@
+[
+  {
+    "nombre": "Leche",
+    "fecha_vencimiento": "2025-01-01",
+    "cantidad": 2
+  },
+  {
+    "nombre": "Jugo de Naranja",
+    "fecha_vencimiento": "2025-04-12",
+    "cantidad": 1
+  }
+]

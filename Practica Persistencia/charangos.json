@@ -1,0 +1,34 @@
+[
+  {
+    "material": "Armadillo",
+    "nroCuerdas": 10,
+    "cuerdas": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "material": "Madera",
+    "nroCuerdas": 8,
+    "cuerdas": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  }
+]

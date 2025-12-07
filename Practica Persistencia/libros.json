@@ -1,0 +1,12 @@
+[
+  {
+    "cod_libro": 1,
+    "titulo": "Java",
+    "precio": 100
+  },
+  {
+    "cod_libro": 2,
+    "titulo": "UML",
+    "precio": 50
+  }
+]
